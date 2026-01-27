@@ -1,0 +1,236 @@
+% \documentclass[tikz,border=10pt]{standalone}
+% \usepackage{amsmath}
+% \usepackage{tikz}
+% \usetikzlibrary{angles, quotes, calc}
+
+% \begin{document}
+% \begin{tikzpicture}[scale=1]
+
+% % Vektorlänge und Abstand
+% \def\veclenA{2.5}
+% \def\veclenB{1.75}
+% \def\spacing{4}
+% \def\angleradius{20}
+
+% % Winkeldefinitionen
+% \def\angleA{120}
+% \def\angleB{90}
+% \def\angleC{45}
+% \def\angleD{0}
+
+% % Farben (Okabe Ito Palette, https://f0nzie.github.io/dataviz-rsuite/color-pitfalls.html)
+% \definecolor{veca}{HTML}{0072B2}  % Blau für a
+% % \definecolor{vecb}{HTML}{E69F00}  % Senfgelb für b
+% \definecolor{vecb}{HTML}{D55E00}  % kräftigeres, rötlicheres Orange für b
+% % \definecolor{proj}{HTML}{009E73}  % bluish green für Projektion
+% \definecolor{proj}{HTML}{CC79A7}  % reddish purple für Projektion
+% \definecolor{anglec}{HTML}{009E73} % bluish green für Winkel
+% % \definecolor{anglec}{HTML}{66C2A5} % leicht entsättigtes Türkis für Winkel
+% % \definecolor{anglec}{HTML}{CC79A7} % reddish purple für Winkel
+% % \definecolor{helper}{HTML}{BBBBBB} % Hellgrau für Hilfslinien
+% \definecolor{helper}{HTML}{E69F00} % orange für Hilfslinien
+
+% % Szene 1: alpha = 120°
+% \def\angle{\angleA}
+% \begin{scope}[shift={(0,0)}]
+%   \coordinate (O) at (0,0);
+%   \coordinate (A) at (\veclenA,0);
+%   \coordinate (B) at (\angle:\veclenB);
+%   \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+%   \node at ($(O)!0.5!(A) + (0,\veclenA)$) {$\alpha=\angle^\circ$};
+%   \draw[->, thick, veca] (O) -- (A) node[right] {$\vec{a}$};
+%   \draw[->, thick, vecb] (O) -- (B) node[above] {$\vec{b}$};
+%   \draw[dashed, helper] (B) -- (P);
+%   \draw[thick, proj] (P) -- (O);
+%   \node at ($(O)!0.5!(P) -(0,0.2*\veclenA)$) {$\vec{a} \cdot \vec{b} < 0$};
+%   \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+% \end{scope}
+
+% % Szene 2: alpha = 90°
+% \def\angle{\angleB}
+% \begin{scope}[shift={(\spacing,0)}]
+%   \coordinate (O) at (0,0);
+%   \coordinate (A) at (\veclenA,0);
+%   \coordinate (B) at (\angle:\veclenB);
+%   \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+%   \node at ($(O)!0.5!(A) + (0,\veclenA)$) {$\alpha=\angle^\circ$};
+%   \draw[->, thick, veca] (O) -- (A) node[right] {$\vec{a}$};
+%   \draw[->, thick, vecb] (O) -- (B) node[above] {$\vec{b}$};
+%   \draw[dashed, helper] (B) -- (P);
+%   % \draw[thick, proj] (P) -- (O);
+%   \fill[proj] (O) circle (1.5pt);
+%   \node at ($(O)!0.5!(P) -(0,0.2*\veclenA)$) {$\vec{a} \cdot \vec{b} = 0$};
+%   \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+% \end{scope}
+
+% % Szene 3: alpha = 45°
+% \def\angle{\angleC}
+% \begin{scope}[shift={(2*\spacing,0)}]
+%   \coordinate (O) at (0,0);
+%   \coordinate (A) at (\veclenA,0);
+%   \coordinate (B) at (\angle:\veclenB);
+%   \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+%   \node at ($(O)!0.5!(A) + (0,\veclenA)$) {$\alpha=\angle^\circ$};
+%   \draw[->, thick, veca] (O) -- (A) node[right] {$\vec{a}$};
+%   \draw[->, thick, vecb] (O) -- (B) node[above] {$\vec{b}$};
+%   \draw[dashed, helper] (B) -- (P);
+%   \draw[thick, proj] (P) -- (O);
+%   \node at ($(O)!0.5!(P) -(0,0.2*\veclenA)$) {$\vec{a} \cdot \vec{b} > 0$};
+%   \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+% \end{scope}
+
+% % Szene 4: alpha = 0°
+% \def\angle{\angleD}
+% \begin{scope}[shift={(3*\spacing,0)}]
+%   \coordinate (O) at (0,0);
+%   \coordinate (A) at (\veclenA,0);
+%   \coordinate (B) at (\angle:\veclenB);
+%   \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+%   \node at ($(O)!0.5!(A) + (0,\veclenA)$) {$\alpha=\angle^\circ$};
+%   \draw[->, thick, veca] (O) -- (A) node[right] {$\vec{a}$};
+%   \draw[->, thick, vecb] (O) -- (B) node[above] {$\vec{b}$};
+%   % \draw[dashed, helper] (B) -- (P);
+%   \draw[thick, proj] (P) -- (O);
+%   \node at ($(O)!0.5!(P) -(0,0.2*\veclenA)$) {$\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}|$};
+%   % \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+% \end{scope}
+
+% \end{tikzpicture}
+% \end{document}
+
+
+
+
+
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{angles, quotes, calc}
+
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+% Vektorlänge und Abstand
+\def\veclenA{2.5}
+\def\veclenB{1.75}
+\def\spacing{4}
+\def\angleradius{20}
+
+% Farben (Okabe Ito Palette, https://f0nzie.github.io/dataviz-rsuite/color-pitfalls.html)
+\definecolor{veca}{HTML}{0072B2}  % Blau für a
+% \definecolor{vecb}{HTML}{E69F00}  % Senfgelb für b
+\definecolor{vecb}{HTML}{D55E00}  % kräftigeres, rötlicheres Orange für b
+% \definecolor{proj}{HTML}{009E73}  % bluish green für Projektion
+\definecolor{proj}{HTML}{CC79A7}  % reddish purple für Projektion
+\definecolor{anglec}{HTML}{009E73} % bluish green für Winkel
+% \definecolor{anglec}{HTML}{66C2A5} % leicht entsättigtes Türkis für Winkel
+% \definecolor{anglec}{HTML}{CC79A7} % reddish purple für Winkel
+% \definecolor{helper}{HTML}{BBBBBB} % Hellgrau für Hilfslinien
+\definecolor{helper}{HTML}{E69F00} % orange für Hilfslinien
+
+
+%%%%%%%%%%%%%%%%%%% alpha = 0°
+\def\angle{0}
+\begin{scope}[shift={(0,0)}]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (\veclenA,0);
+  \coordinate (B) at (\angle:\veclenB);
+  \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+  \node at ($(O)!0.5!(A) + (0,1.1*\veclenB)$) {$\alpha=\angle^\circ$};
+  \draw[->, thick, veca] (O) -- (A) node[above] {$\vec{a}$};
+  \draw[->, thick, vecb] (O) -- (B) node[above] {$\vec{b}$};
+  % \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+  % \draw[dashed, helper] (B) -- (P);
+  \draw[thick, proj] (P) -- (O);
+  \fill[proj, opacity=0.3] (O) rectangle (P |- 0,-\veclenA);
+  \node at ($(O)!0.5!(P) - (0,0.3*\veclenA)$) {$\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}|$};
+\end{scope}
+
+%%%%%%%%%%%%%%%%%%% alpha = 45°
+\def\angle{45}
+\begin{scope}[shift={(\spacing,0)}]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (\veclenA,0);
+  \coordinate (B) at (\angle:\veclenB);
+  \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+  \node at ($(O)!0.5!(A) + (0,1.1*\veclenB)$) {$\alpha=\angle^\circ$};
+  \draw[->, thick, veca] (O) -- (A) node[above left] {$\vec{a}$};
+  \draw[->, thick, vecb] (O) -- (B) node[right] {$\vec{b}$};
+  \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+  \draw[dashed, helper] (B) -- (P);
+  \draw[thick, proj] (P) -- (O);
+  \fill[proj, opacity=0.3] (O) rectangle (P |- 0,-\veclenA);
+  \node at ($(O)!0.5!(P) - (0,0.3*\veclenA)$) {$\vec{a} \cdot \vec{b} > 0$};
+\end{scope}
+
+%%%%%%%%%%%%%%%%%%% alpha = 90°
+\def\angle{90}
+\begin{scope}[shift={(2*\spacing,0)}]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (\veclenA,0);
+  \coordinate (B) at (\angle:\veclenB);
+  \coordinate (P) at ({\veclenB*cos(\angle)},0);
+
+  \node at ($(O)!0.5!(A) + (0,1.1*\veclenB)$) {$\alpha=\angle^\circ$};
+  \draw[->, thick, veca] (O) -- (A) node[above left] {$\vec{a}$};
+  \draw[->, thick, vecb] (O) -- (B) node[right] {$\vec{b}$};
+  \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+  \draw[dashed, helper] (B) -- (P);
+  % \draw[thick, proj] (P) -- (O);
+  \fill[proj] (O) circle (1.5pt);
+  \node at ($(O)!0.5!(P) - (0,0.3*\veclenA)$) {$\vec{a} \cdot \vec{b} = 0$};
+\end{scope}
+
+%%%%%%%%%%%%%%%%%%% alpha = 120°
+\def\angle{120}
+\begin{scope}[shift={(3*\spacing,0)}]
+  % \coordinate (O) at (0,0);
+  % \coordinate (A) at (\veclenA,0);
+  % \coordinate (B) at (\angle:\veclenB);
+  % \coordinate (P) at ({\veclenB*cos(\angle)},0);
+  \coordinate (O) at ({-\veclenB*cos(\angle)},0);
+  \coordinate (A) at ({\veclenA - \veclenB*cos(\angle)},0);
+  \coordinate (B) at (0,{\veclenB*sin(\angle)});
+  \coordinate (P) at (0,0);
+
+  \node at ($(P)!0.5!(A) + (0,1.1*\veclenB)$) {$\alpha=\angle^\circ$};
+  \draw[->, thick, veca] (O) -- (A) node[above left] {$\vec{a}$};
+  \draw[->, thick, vecb] (O) -- (B) node[above right] {$\vec{b}$};
+  \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+  \draw[dashed, helper] (B) -- (P);
+  \draw[thick, proj] (P) -- (O);
+  \fill[proj, opacity=0.3] (O) rectangle (P |- 0,-\veclenA);
+  \node at ($(O)!0.5!(P) - (0,0.3*\veclenA)$) {$\vec{a} \cdot \vec{b} < 0$};
+\end{scope}
+
+%%%%%%%%%%%%%%%%%%% alpha = 180°
+\def\angle{180}
+\begin{scope}[shift={(4*\spacing,0)}]
+  % \coordinate (O) at (0,0);
+  % \coordinate (A) at (\veclenA,0);
+  % \coordinate (B) at (\angle:\veclenB);
+  % \coordinate (P) at ({\veclenB*cos(\angle)},0);
+  \coordinate (O) at ({-\veclenB*cos(\angle)},0);
+  \coordinate (A) at ({\veclenA - \veclenB*cos(\angle)},0);
+  \coordinate (B) at (0,{\veclenB*sin(\angle)});
+  \coordinate (P) at (0,0);
+
+  \node at ($(P)!0.5!(A) + (0,1.1*\veclenB)$) {$\alpha=\angle^\circ$};
+  \draw[->, thick, veca] (O) -- (A) node[above left] {$\vec{a}$};
+  \draw[->, thick, vecb] (O) -- (B) node[above right] {$\vec{b}$};
+  \pic[draw, color=anglec, ->, angle radius=\angleradius, "$\alpha$"] {angle=A--O--B};
+  \draw[dashed, helper] (B) -- (P);
+  \draw[thick, proj] (P) -- (O);
+  \fill[proj, opacity=0.3] (O) rectangle (P |- 0,-\veclenA);
+  \node at ($(O)!0.5!(P) - (0,0.3*\veclenA)$) {$\vec{a} \cdot \vec{b} = -|\vec{a}| |\vec{b}|$};
+\end{scope}
+
+
+\end{tikzpicture}
+\end{document}
