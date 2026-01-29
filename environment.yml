@@ -1,0 +1,16 @@
+name: ngds
+channels:
+  - conda-forge
+dependencies:
+  - ipython
+  - ipykernel
+  - jupyter
+  - black
+  - black-jupyter
+  - pylint
+  - numpy
+  - scipy
+  - pandas
+  - openpyxl
+  - seaborn
+  - matplotlib

@@ -1,0 +1,11 @@
+ipython
+ipykernel
+jupyter
+black[jupyter]
+pylint
+numpy
+scipy
+pandas
+openpyxl
+seaborn
+matplotlib
