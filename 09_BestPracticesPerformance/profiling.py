@@ -3,7 +3,6 @@ from pstats import Stats
 from cProfile import Profile
 
 
-
 def interpolate_linear_slow1(x_data, y_data, x):
     y = []
     for x_k in x:
@@ -21,6 +20,7 @@ def interpolate_linear_slow1(x_data, y_data, x):
         y_k = (y_upper - y_lower) / (x_upper - x_lower) * (x_k - x_lower) + y_lower
         y.append(y_k)
     return np.array(y)
+
 
 def interpolate_linear_slow2(x_data, y_data, x):
     n = len(x_data)
@@ -40,6 +40,7 @@ def interpolate_linear_slow2(x_data, y_data, x):
         yi = (y_upper - y_lower) / (x_upper - x_lower) * (x_k - x_lower) + y_lower
         y.append(yi)
     return np.array(y)
+
 
 n_data = 100
 rng = np.random.default_rng(42)
