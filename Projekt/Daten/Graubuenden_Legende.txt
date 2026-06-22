@@ -1,0 +1,100 @@
+Bundesamt für Meteorologie und Klimatologie, MeteoSchweiz
+Operation Center 1
+Postfach 257
+8058 Zürich-Flughafen
+
+stn yyyyMMddHHmm
+
+stn Stationskürzel
+y   Jahr
+M   Monat
+d   Tag
+H   Stunde
+m   Minute
+
+Zeitangaben in UTC: 00:40 UTC = 02:40 Sommerzeit
+                              = 01:40 Winterzeit
+
+Zeitbezug bei Stundenwerten, sofern in der Parameterbeschreibung nicht anders vermerkt: HH  = (HH-1):01 - HH:00
+Beispiel: 13 = beinhaltet Messperiode von 12:01 bis 13:00 
+
+Qualitätsinformationen: Die Legende zu den Qualitätsinformationen ist zu finden unter: https://gate.meteoswiss.ch/idaweb/text/datenqualitaet_legende_de.pdf
+
+
+Stationen
+---------
+stn       Name                                 Parameter        Datenquelle                                        Länge/Breite             Koordinaten [km] Höhe ü. M. [m]
+AND       Andeer                               prestah0         MeteoSchweiz                                       9°26'/46°37'             752691/164038    987
+AND       Andeer                               tre200h0         MeteoSchweiz                                       9°26'/46°37'             752691/164038    987
+AND       Andeer                               rre150h0         MeteoSchweiz                                       9°26'/46°37'             752691/164038    987
+AND       Andeer                               su2000h0         MeteoSchweiz                                       9°26'/46°37'             752691/164038    987
+ARO       Arosa                                prestah0         MeteoSchweiz                                       9°41'/46°48'             771030/184830    1878
+ARO       Arosa                                tre200h0         MeteoSchweiz                                       9°41'/46°48'             771030/184830    1878
+ARO       Arosa                                rre150h0         MeteoSchweiz                                       9°41'/46°48'             771030/184830    1878
+ARO       Arosa                                su2000h0         MeteoSchweiz                                       9°41'/46°48'             771030/184830    1878
+CHU       Chur                                 prestah0         MeteoSchweiz                                       9°32'/46°52'             759488/193181    556
+CHU       Chur                                 tre200h0         MeteoSchweiz                                       9°32'/46°52'             759488/193181    556
+CHU       Chur                                 rre150h0         MeteoSchweiz                                       9°32'/46°52'             759488/193181    556
+CHU       Chur                                 su2000h0         MeteoSchweiz                                       9°32'/46°52'             759488/193181    556
+DAV       Davos                                prestah0         MeteoSchweiz                                       9°51'/46°49'             783518/187458    1594
+DAV       Davos                                tre200h0         MeteoSchweiz                                       9°51'/46°49'             783518/187458    1594
+DAV       Davos                                rre150h0         MeteoSchweiz                                       9°51'/46°49'             783518/187458    1594
+DAV       Davos                                su2000h0         MeteoSchweiz                                       9°51'/46°49'             783518/187458    1594
+DIS       Disentis                             prestah0         MeteoSchweiz                                       8°51'/46°42'             708190/173793    1197
+DIS       Disentis                             tre200h0         MeteoSchweiz                                       8°51'/46°42'             708190/173793    1197
+DIS       Disentis                             rre150h0         MeteoSchweiz                                       8°51'/46°42'             708190/173793    1197
+DIS       Disentis                             su2000h0         MeteoSchweiz                                       8°51'/46°42'             708190/173793    1197
+GRO       Grono                                prestah0         MeteoSchweiz                                       9°10'/46°15'             733016/124090    323
+GRO       Grono                                tre200h0         MeteoSchweiz                                       9°10'/46°15'             733016/124090    323
+GRO       Grono                                rre150h0         MeteoSchweiz                                       9°10'/46°15'             733016/124090    323
+GRO       Grono                                su2000h0         MeteoSchweiz                                       9°10'/46°15'             733016/124090    323
+BEH       Passo del Bernina                    prestah0         MeteoSchweiz                                       10°01'/46°25'            798422/143020    2260
+BEH       Passo del Bernina                    tre200h0         MeteoSchweiz                                       10°01'/46°25'            798422/143020    2260
+BEH       Passo del Bernina                    rre150h0         MeteoSchweiz                                       10°01'/46°25'            798422/143020    2260
+BEH       Passo del Bernina                    su2000h0         MeteoSchweiz                                       10°01'/46°25'            798422/143020    2260
+ROB       Poschiavo / Robbia                   prestah0         MeteoSchweiz                                       10°04'/46°21'            801992/136248    1078
+ROB       Poschiavo / Robbia                   tre200h0         MeteoSchweiz                                       10°04'/46°21'            801992/136248    1078
+ROB       Poschiavo / Robbia                   rre150h0         MeteoSchweiz                                       10°04'/46°21'            801992/136248    1078
+ROB       Poschiavo / Robbia                   su2000h0         MeteoSchweiz                                       10°04'/46°21'            801992/136248    1078
+SBE       S. Bernardino                        prestah0         MeteoSchweiz                                       9°11'/46°28'             734115/147294    1638
+SBE       S. Bernardino                        tre200h0         MeteoSchweiz                                       9°11'/46°28'             734115/147294    1638
+SBE       S. Bernardino                        rre150h0         MeteoSchweiz                                       9°11'/46°28'             734115/147294    1638
+SBE       S. Bernardino                        su2000h0         MeteoSchweiz                                       9°11'/46°28'             734115/147294    1638
+SAM       Samedan                              prestah0         MeteoSchweiz                                       9°53'/46°32'             787249/155685    1708
+SAM       Samedan                              tre200h0         MeteoSchweiz                                       9°53'/46°32'             787249/155685    1708
+SAM       Samedan                              rre150h0         MeteoSchweiz                                       9°53'/46°32'             787249/155685    1708
+SAM       Samedan                              su2000h0         MeteoSchweiz                                       9°53'/46°32'             787249/155685    1708
+SCU       Scuol                                prestah0         MeteoSchweiz                                       10°17'/46°48'            817137/186393    1303
+SCU       Scuol                                tre200h0         MeteoSchweiz                                       10°17'/46°48'            817137/186393    1303
+SCU       Scuol                                rre150h0         MeteoSchweiz                                       10°17'/46°48'            817137/186393    1303
+SCU       Scuol                                su2000h0         MeteoSchweiz                                       10°17'/46°48'            817137/186393    1303
+SMM       Sta. Maria, Val Müstair              prestah0         MeteoSchweiz                                       10°26'/46°36'            828861/165579    1386
+SMM       Sta. Maria, Val Müstair              tre200h0         MeteoSchweiz                                       10°26'/46°36'            828861/165579    1386
+SMM       Sta. Maria, Val Müstair              rre150h0         MeteoSchweiz                                       10°26'/46°36'            828861/165579    1386
+SMM       Sta. Maria, Val Müstair              su2000h0         MeteoSchweiz                                       10°26'/46°36'            828861/165579    1386
+VAB       Valbella                             prestah0         MeteoSchweiz                                       9°33'/46°45'             761634/180385    1568
+VAB       Valbella                             tre200h0         MeteoSchweiz                                       9°33'/46°45'             761634/180385    1568
+VAB       Valbella                             rre150h0         MeteoSchweiz                                       9°33'/46°45'             761634/180385    1568
+VAB       Valbella                             su2000h0         MeteoSchweiz                                       9°33'/46°45'             761634/180385    1568
+VIO       Vicosoprano                          prestah0         MeteoSchweiz                                       9°38'/46°21'             768485/135866    1089
+VIO       Vicosoprano                          tre200h0         MeteoSchweiz                                       9°38'/46°21'             768485/135866    1089
+VIO       Vicosoprano                          rre150h0         MeteoSchweiz                                       9°38'/46°21'             768485/135866    1089
+VIO       Vicosoprano                          su2000h0         MeteoSchweiz                                       9°38'/46°21'             768485/135866    1089
+WFJ       Weissfluhjoch                        prestah0         MeteoSchweiz                                       9°48'/46°50'             780614/189634    2691
+WFJ       Weissfluhjoch                        tre200h0         MeteoSchweiz                                       9°48'/46°50'             780614/189634    2691
+WFJ       Weissfluhjoch                        rre150h0         MeteoSchweiz                                       9°48'/46°50'             780614/189634    2691
+WFJ       Weissfluhjoch                        su2000h0         MeteoSchweiz                                       9°48'/46°50'             780614/189634    2691
+
+Parameter
+---------
+          Einheit                              Beschreibung
+prestah0  hPa                                  Luftdruck auf Barometerhöhe (QFE); Stundenmittel
+tre200h0  °C                                   Lufttemperatur 2 m über Boden; Stundenmittel
+rre150h0  mm                                   Niederschlag; Stundensumme
+su2000h0  h                                    Sonnenscheindauer; Stundensumme
+
+Weitere Spalten
+---------------
+
+date_time YYYY-MM-DD hh:mm:ss                  Zeitstempel der Messung
+time_days d                                    Zeit seit der ersten Messung in Tagen
