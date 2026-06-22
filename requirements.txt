@@ -1,5 +1,6 @@
 ipython
 ipykernel
+jupyter-book
 jupyter
 black[jupyter]
 pylint

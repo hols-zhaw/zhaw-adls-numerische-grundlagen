@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,macos,microsoftoffice,pycharm,python,visualstudiocode,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks,macos,microsoftoffice,pycharm,python,visualstudiocode,windows
+# Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,microsoftoffice,jupyternotebooks,visualstudiocode,windows,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm,microsoftoffice,jupyternotebooks,visualstudiocode,windows,macos
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -396,4 +396,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks,macos,microsoftoffice,pycharm,python,visualstudiocode,windows
+# End of https://www.toptal.com/developers/gitignore/api/python,pycharm,microsoftoffice,jupyternotebooks,visualstudiocode,windows,macos
+
+# MyST build outputs
+_build
